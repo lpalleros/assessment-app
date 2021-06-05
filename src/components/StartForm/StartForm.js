@@ -1,5 +1,6 @@
 import React from 'react';
 import './StartForm.css';
+import {Link} from 'react-router-dom';
 
 const StartForm = () => {
     return (
@@ -14,7 +15,9 @@ const StartForm = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste sunt 
             dolores itaque dolore. Iste beatae nulla nam debitis rem sunt tempore, fugit
             </p>
-            <button>Start</button>
+            <Link to="/assessment">
+                <button>Start</button>
+            </Link>
         </div>
     )
 }
