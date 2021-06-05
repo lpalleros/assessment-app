@@ -1,12 +1,12 @@
 
 import './App.css';
-import ProgressBar from '../ProgressBar/ProgressBar'
+import Assessment from '../screen/Assessment/Assessment'
+
 
 function App() {
   return (
     <div className="App">
-      <h2>App</h2>
-      <ProgressBar />
+      <Assessment/>
     </div>
   );
 }
