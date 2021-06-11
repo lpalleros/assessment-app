@@ -1,0 +1,39 @@
+.btn-next {
+    margin-top: 4px;
+    background-color: #89B0AE;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn-sgte {
+    text-align: center;
+    padding-top: 2px;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.formulario {
+    border-radius: 12px;
+    border: 1px solid gray;
+    width: 50%;
+    height: 200px;
+    justify-content: center;
+    margin: 0;
+}
+
+.opciones {
+    border-radius: 8px;
+    border: 1px solid gray;
+    position: relative;
+    margin: 0 60px;
+    display: flex;
+    padding: 6px;
+    margin-top: 8px;
+}
+
+.texto-formulario {
+    text-align: center;
+}

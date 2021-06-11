@@ -1,0 +1,20 @@
+.progressbar {
+    width: 80%;
+}
+
+.pb {
+    text-align: center;
+}
+
+/* .pb {
+    margin-top: 6px;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-radius: 14px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+} */

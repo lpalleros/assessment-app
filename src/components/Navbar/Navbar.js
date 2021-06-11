@@ -4,21 +4,20 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-        <header className="header">
-            <section className="header-content">
-                <nav className="menu">
-                    <Link to="/">
-                        <button>Start</button>
-                    </Link>
-                    <Link to="/assessment">
-                        <button>Assessment</button>
-                    </Link>
-                    <Link to="/dashboard">
-                        <button>Dashboard</button>
-                    </Link>
-                </nav>
-            </section>
-        </header>
+        <nav className="navbar">
+            <a href="#" className="toggle-button">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </a>
+            <div className="navbar-links">
+                <ul>
+                    <Link to="/" className="link">Start</Link>
+                    <Link to="/assessment" className="link">Assessment</Link>
+                    <Link to="/dashboard" className="link">Dashboard</Link>
+                </ul>
+            </div>
+        </nav>
     )
 }
 

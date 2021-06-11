@@ -1,0 +1,38 @@
+.btn-start {
+    background-color: #89B0AE;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    cursor: pointer;
+    border-style:solid;
+    /* border-color: black; */
+    margin-left: 300px;
+}
+
+.contenedor {
+    display: flex;
+    /* justify-content: center;
+    text-align: center; */
+}
+
+h1, h2, h3 {
+    color: #89B0AE;
+}
+
+.lado-izquierdo {
+    /* display: flex; */
+    margin-left: auto;
+    margin-top: 180px;
+    /* text-align: center; */
+}
+
+.lado-derecho {
+    /* display: flex; */
+    margin-right: 250px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+p {
+    margin-left: 400px;
+}
