@@ -1,17 +1,5 @@
-.header {
-    padding: .5rem;
+.navbar {
+    min-height: 66px;
     background-color: #555B6E;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    font-size: 115%;
-    text-align: center;
+    width: 100%;
 }

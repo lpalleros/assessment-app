@@ -3,11 +3,13 @@ import './Assessment.css';
 
 import AssessmentForm from '../../components/AssessmentForm/AssessmentForm';
 import Navbar from '../../components/Navbar/Navbar';
+import ProgressBar from '../../components/ProgressBar/ProgressBar';
 
 function Assessment () {
     return (
         <>
-            <Navbar/> 
+            <Navbar/>
+            <ProgressBar/>
             <AssessmentForm/>
         </>
     )
