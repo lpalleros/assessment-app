@@ -68,7 +68,7 @@ function AssessmentForm() {
     return (
         <div className="container">
             <form action="#" className="formulario">
-            <p className="texto-formulario"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkn  </p>
+                <p className="texto-formulario">Card layouts can vary to support the types of content they contain. The following elements are commonly found among that variety.</p>
                 <label htmlFor='op1' className="opciones">
                     <input id='op1' name="group1" type="radio" onClick={() => setPreguntaSeleccionada("a")} />
                     <span>{questions[numeroPregunta].question1}</span>
@@ -87,7 +87,7 @@ function AssessmentForm() {
                 </label>
             </form>
             <div className="btn-sgte">
-                <button onClick={handleNextQuestion} className="btn-next">Next Question </button>
+                <button onClick={handleNextQuestion} className="btn-next">Next question</button>
             </div>
         </div>
     )

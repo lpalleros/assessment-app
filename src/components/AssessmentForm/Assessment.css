@@ -1,56 +1,40 @@
-/* body {
-    background-color: #89B0AE;
-} */
-
 .btn-next {
     width: 272px;
     height: 56px;
+    margin-left: 870px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 38px;
+    font-family: "Inter";
+    font-weight: bold;
 }
 
 .btn-sgte {
    display: flex;
-   margin-top: 38px;
-   /* margin-left: 909px; */
 }
 
 .container {
-    /* margin-top: 10%; */
-    /* display: flex; */
-    /* background-color: #FAF9F9; */
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #263238;
 }
 
 .formulario {
-    /*  flex-wrap: none; */
     background-color: #FFFFFF;
-    /* position: absolute; */
-    /* left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px; */
     width: 941px;
     height: 397px;
     border: 1px solid;
-    /* margin-top: 240px;
-    margin-bottom: 263px; */
+    margin: auto;
+    margin-top: 50px;
     border-radius: 12px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1),
                 0px 4px 8px rgba(0, 0, 0, 0.08),
                 0px 1px 12px rgba(0, 0, 0, 0.04);
 }
 
-/* .opcion1 {
-    display: flex;
-}
-
-.opcion2 {
-    display: flex;
-} */
-
 .opciones {
-   /* margin-top: 136px; */
-   /* margin-left: 331px; */
-   /* width: 758px;
-   height: 64px; */
    display: flex;
    margin-left: 331px;
    margin-bottom: 15px;
@@ -69,5 +53,6 @@ p {
 }
 
 .texto-formulario {
-    /* text-align: center; */
+    margin-left: 162px;
+    margin-right: 115px;
 }

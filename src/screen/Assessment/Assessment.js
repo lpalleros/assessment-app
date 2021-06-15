@@ -9,7 +9,7 @@ function Assessment () {
     return (
         <>
             <Navbar/>
-            <ProgressBar/>
+            {/* <ProgressBar/> */}
             <AssessmentForm/>
         </>
     )
