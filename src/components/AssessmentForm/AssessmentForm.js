@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import "../../components/AssessmentForm/Assessment.css";
 
 function AssessmentForm() {
 
-    const [question, setQuestion] = useState([
+    const history = useHistory();
+
+    const [questions, setQuestion] = useState([
         {
             question1: "A",
             question2: "B",
@@ -24,6 +27,13 @@ function AssessmentForm() {
             question3: "c",
             question4: "d",
             answer: "c"
+        },
+        {
+            question1: "1",
+            question2: "2",
+            question3: "3",
+            question4: "4",
+            answer: "c"
         }
     ]);
 
@@ -33,41 +43,47 @@ function AssessmentForm() {
 
     const [respuestas, setRespuestas] = useState([]);
 
-    console.log(numeroPregunta);
-    console.log(question[numeroPregunta]);
+    console.log("Nro pregunta: ", numeroPregunta);
+    console.log(questions[numeroPregunta]);
 
     const handleNextQuestion = () => {
-        if(numeroPregunta < 2){
-        setRespuestas((state) => [...state, preguntaSeleccionada])
-        setNumeroPregunta(numeroPregunta + 1);
+        if(numeroPregunta >= questions.length -1){
+            history.push("/dashboard");
+        }else{
+            setRespuestas((state) => [...state, preguntaSeleccionada])
+            setNumeroPregunta(numeroPregunta + 1);
         }
     }
 
-    const result = question.map((q, i) => q.answer == respuestas[i])
+    const result = questions.map((q, i) => q.answer == respuestas[i])
 
-    console.log(preguntaSeleccionada);
-    console.log(respuestas);
-    console.log(result);
+    console.log("Pregunta Selec. :", preguntaSeleccionada);
+    console.log("Respuesta :", respuestas);
+    console.log("Resultado: ", result);
+
+    const respuestasCorrectas = result.filter((r) => r == true)
+    const numeroRespuestasCorrectas = respuestasCorrectas.length
+    console.log("Respuestas correctas: " + numeroRespuestasCorrectas + "/" + numeroPregunta);
 
     return (
-        <div className="container">       
+        <div className="container">
             <form action="#" className="formulario">
             <p className="texto-formulario"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkn  </p>
                 <label htmlFor='op1' className="opciones">
                     <input id='op1' name="group1" type="radio" onClick={() => setPreguntaSeleccionada("a")} />
-                    <span>{question[numeroPregunta].question1}</span>
+                    <span>{questions[numeroPregunta].question1}</span>
                 </label> 
                 <label htmlFor='op2' className="opciones">
                     <input id='op2'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("b")} />
-                    <span>{question[numeroPregunta].question2}</span>
+                    <span>{questions[numeroPregunta].question2}</span>
                 </label>
                 <label htmlFor='op3' className="opciones">
                     <input id='op3'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("c")} />
-                    <span>{question[numeroPregunta].question3}</span>
+                    <span>{questions[numeroPregunta].question3}</span>
                 </label>
                 <label htmlFor='op4' className="opciones">
                     <input id='op4'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("d")} />
-                    <span>{question[numeroPregunta].question4}</span>
+                    <span>{questions[numeroPregunta].question4}</span>
                 </label>
             </form>
             <div className="btn-sgte">
