@@ -5,7 +5,8 @@
     border-radius: 12px;
     cursor: pointer;
     margin-top: 38px;
-    /* margin-top: 675px; */
+    font-family: "Inter";
+    font-weight: bold;
 }
 
 .btn-sgte {
@@ -13,8 +14,11 @@
 }
 
 .container {
-    /* margin-top: 10%; */
-    /* display: flex; */
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #263238;
 }
 
 .formulario {
@@ -24,10 +28,6 @@
     border: 1px solid;
     margin: auto;
     margin-top: 50px;
-    /* margin-top: 240px; */
-    /* margin-left: 240px; */
-    /* margin-right: 219px; */
-    /* margin-bottom: 263px; */
     border-radius: 12px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1),
                 0px 4px 8px rgba(0, 0, 0, 0.08),
@@ -35,9 +35,6 @@
 }
 
 .opciones {
-   /* margin-top: 136px; */
-   /* width: 758px;
-   height: 64px; */
    display: flex;
    margin-left: 331px;
    margin-bottom: 15px;
