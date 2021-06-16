@@ -3,7 +3,7 @@ import '../../components/Dashboard/DashboardForm.css';
 
 const DashboardForm = () => {
     return (
-        <div className="container">
+        <div className="container-dashboard">
             <div className="dashboard-1">
                 <p className="p1-1">Your Score</p>
                 <p className="p1-2">10/10</p>
