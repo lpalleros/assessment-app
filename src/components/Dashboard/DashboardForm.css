@@ -1,9 +1,5 @@
-h1 {
-    color:black;
-}
-
 .container {
-    /* display: flex; */
+    display: flex;
 }
 
 .dashboard-1 {
@@ -16,8 +12,7 @@ h1 {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 217px;
     margin-top: 206px;
-    margin-right: 873px;
-    margin-bottom: 450px;
+    margin-right: 60px;
 }
 
 .dashboard-2 {
@@ -28,91 +23,63 @@ h1 {
     left: 587px;
     border-radius: 26px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 587px;
     margin-top: 206px;
-    margin-right: 217px;
-    margin-bottom: 450px;
 }
 
 .p1-1 {
     width: 146px;
     height: 36px;
-    /* top: 260px; */
     left: 299px;
     margin-left: 82px;
-    /* margin-top: 260px; */
     margin-right: 955px;
-    margin-bottom: 604px;
     font-family: "Roboto";
-    /* font-weight: 400px; */
     font-weight: bold;
     font-size: 30px;
-    line-height: 35.16px;
     color: #555B6E;
-    padding-top: 54px;
 }
 .p1-2 {
     width: 142px;
     height: 97px;
-    top: 319px;
-    left: 301px;
-    margin-left: 301px;
-    margin-top: 319px;
-    margin-right: 957px;
-    margin-bottom: 484px;
     font-family: "Roboto";
     font-weight: bold;
     font-size: 48px;
-    line-height: 56px;
     color: #555B6E;
-    padding-top: 113px;
+    margin: auto;
 }
 
 .p2-1 {
     width: 314px;
     height: 34px;
-    top: 271px;
-    left: 661px;
-    margin-left: 661px;
-    margin-top: 271px;
-    margin-right: 425px;
-    margin-bottom: 595px;
     font-family: "Roboto";
     font-weight: bold;
     font-size: 25px;
-    line-height: 29px;
     color: #555B6E;
+    margin: auto;
+    padding-top: 65px;
+    padding-right: 150px;
+    padding-left: 50px;
 }
 
 .p2-2 {
     width: 212px;
     height: 61px;
-    top: 317px;
-    left: 659px;
-    margin-left: 659px;
-    margin-top: 317px;
-    margin-right: 629px;
-    margin-bottom: 522px;
     font-family: "Roboto";
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
     color: #555B6E;
+    margin: auto;
+    position: absolute;
+    padding-left: 90px;
+    padding-top: 12px;
 }
 
 .p2-3 {
     width: 353px;
     height: 63px;
-    top: 308px;
-    left: 772px;
-    margin-left: 772px;
-    margin-top: 308px;
-    margin-right: 275px;
-    margin-bottom: 529px;
     font-family: "Inter";
     font-weight: bold;
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.005em;
     color: #263238;
+    margin: auto;
+    padding-left: 170px;
 }

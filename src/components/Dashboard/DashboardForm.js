@@ -9,11 +9,13 @@ const DashboardForm = () => {
                 <p className="p1-2">10/10</p>
             </div>
             <div className="dashboard-2">
-                <p className="p2-1">Your Score explained</p>
-                <p className="p2-2">10/10</p>
-                <p className="p2-3">Card layouts can vary to support the types of 
-                content they contain. The following elements are 
-                commonly found among that variety.</p>
+                <div>
+                    <p className="p2-1">Your Score explained</p>
+                    <p className="p2-2">10/10</p>
+                    <p className="p2-3">Card layouts can vary to support the types of 
+                    content they contain. The following elements are 
+                    commonly found among that variety.</p>
+                </div>
             </div>
         </div>
     )
