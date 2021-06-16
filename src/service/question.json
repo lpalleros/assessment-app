@@ -1,0 +1,47 @@
+1) Which of the following isn't a JSON type?
+A. String
+B.Object
+C.Date ok
+D..Array
+2) Which is the file extension of JSON?
+A. .jsn
+B..json
+C..jn
+D..js
+3) Is whitespace matter in JSON?
+A. No, it will be stripped out.
+B.Yes, both inside and outside of strings
+C.Yes, only within strings
+D.Yes, only outside of strings
+4) Who is the creator of JSON ?
+A. Sergey Brin
+B.Douglas Crockford
+C.Liam Crockford
+D.None of these
+5) What is the purpose of method JSON.parse()?
+A. Parses a string from JSON to JSON2
+B.Parses a string to integer
+C.Parses a string to JSON
+D.Parses integer to string
+6) Which of the following is the fastest JavaScript parser?
+A. Acron
+B.JSLint
+C.Esprima
+D.Traceur
+7) which of the following isn't create the object?
+A. Object literals
+B.Constructors
+C.Object.create
+D.Object Construct
+8) What is the full form of JSON?
+A. JavaScripts Object Notification.
+B.JavaScript Object Notation.
+C.None of these
+9) JSON is a programming language?
+A. True
+B.False
+10) What is JSON data?
+A. Exchanging data
+B.Non-exchanging data
+C.Changing data
+D.None of these
