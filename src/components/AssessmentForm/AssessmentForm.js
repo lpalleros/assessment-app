@@ -1,39 +1,30 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useHistory } from 'react-router-dom';
 import "../../components/AssessmentForm/Assessment.css";
+import dataList from '../../service/question.json';
+
+//Importar el json
+// Hacer un useEffect que llene el state
+// El estado inicial lo defino como vacío, como un objeto en blanco
 
 function AssessmentForm() {
 
     const history = useHistory();
 
-    const [questions, setQuestion] = useState([
+    useEffect(() => {
+        setQuestions(dataList)
+        console.log("Preguntas: ", dataList);
+    }, [])
+
+    const [questions, setQuestions] = useState([
         {
-            question1: "A",
-            question2: "B",
-            question3: "C",
-            question4: "D",
-            answer: "a"
-        },
-        {
-            question1: "a",
-            question2: "b",
-            question3: "c",
-            question4: "d",
-            answer: "b"
-        },
-        {
-            question1: "a",
-            question2: "b",
-            question3: "c",
-            question4: "d",
-            answer: "c"
-        },
-        {
-            question1: "1",
-            question2: "2",
-            question3: "3",
-            question4: "4",
-            answer: "c"
+            id: 1,
+            questions: "",
+            question1: "",
+            question2: "",
+            question3: "",
+            question4: "",
+            answer: ""
         }
     ]);
 
@@ -42,9 +33,6 @@ function AssessmentForm() {
     const [preguntaSeleccionada, setPreguntaSeleccionada] = useState("");
 
     const [respuestas, setRespuestas] = useState([]);
-
-    console.log("Nro pregunta: ", numeroPregunta);
-    console.log(questions[numeroPregunta]);
 
     const handleNextQuestion = () => {
         if(numeroPregunta >= questions.length -1){
@@ -57,32 +45,27 @@ function AssessmentForm() {
 
     const result = questions.map((q, i) => q.answer == respuestas[i])
 
-    console.log("Pregunta Selec. :", preguntaSeleccionada);
-    console.log("Respuesta :", respuestas);
-    console.log("Resultado: ", result);
-
     const respuestasCorrectas = result.filter((r) => r == true)
     const numeroRespuestasCorrectas = respuestasCorrectas.length
-    console.log("Respuestas correctas: " + numeroRespuestasCorrectas + "/" + numeroPregunta);
 
     return (
         <div className="container">
             <form action="#" className="formulario">
-                <p className="texto-formulario">Card layouts can vary to support the types of content they contain. The following elements are commonly found among that variety.</p>
+                <p className="texto-formulario">{questions[numeroPregunta].questions}</p>
                 <label htmlFor='op1' className="opciones">
-                    <input id='op1' name="group1" type="radio" onClick={() => setPreguntaSeleccionada("a")} />
+                    <input id="op1" name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question1)} />
                     <span>{questions[numeroPregunta].question1}</span>
                 </label> 
                 <label htmlFor='op2' className="opciones">
-                    <input id='op2'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("b")} />
+                    <input id='op2'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question2)} />
                     <span>{questions[numeroPregunta].question2}</span>
                 </label>
                 <label htmlFor='op3' className="opciones">
-                    <input id='op3'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("c")} />
+                    <input id='op3'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question3)} />
                     <span>{questions[numeroPregunta].question3}</span>
                 </label>
                 <label htmlFor='op4' className="opciones">
-                    <input id='op4'name="group1" type="radio" onClick={() => setPreguntaSeleccionada("d")} />
+                    <input id='op4'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question4)} />
                     <span>{questions[numeroPregunta].question4}</span>
                 </label>
             </form>

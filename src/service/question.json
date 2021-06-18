@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "questions": "Which of the following isn't a JSON type?",
+        "question1": "String",
+        "question2": "Object",
+        "question3": "Date ok",
+        "question4": "Array",
+        "answer": "Date ok"
+    },
+    {
+        "id": 2,
+        "questions": "Which is the file extension of JSON?",
+        "question1": "jsn",
+        "question2": "json",
+        "question3": "jn",
+        "question4": "js",
+        "answer": "json"
+    },
+    {
+        "id": 3,
+        "questions": "Is whitespace matter in JSON?",
+        "question1": "No, it will be stripped out",
+        "question2": "Yes, both inside and outside of strings",
+        "question3": "Yes, only within strings",
+        "question4": "Yes, only outside of strings",
+        "answer": "Yes, only within strings"
+    },
+    {
+        "id": 4,
+        "questions": "Who is the creator of JSON?",
+        "question1": "Sergey Brin",
+        "question2": "Douglas Crockford",
+        "question3": "Liam Crockford",
+        "question4": "None of these",
+        "answer": "Douglas Crockford"
+    },
+    {
+        "id": 5,
+        "questions": "What is the purpose of method JSON.parse()?",
+        "question1": "Parses a string from JSON to JSON2",
+        "question2": "Parses a string to integer",
+        "question3": "Parses a string to JSON",
+        "question4": "Parses integer to string",
+        "answer": "Parses a string from JSON to JSON2"
+    },
+    {
+        "id": 6,
+        "questions": "Which of the following is the fastest JavaScript parser?",
+        "question1": "Acron",
+        "question2": "JSLint",
+        "question3": "Esprima",
+        "question4": "Traceur",
+        "answer": "Esprima"
+    },
+    {
+        "id": 7,
+        "questions": "Which of the following isn't create the object?",
+        "question1": "Object literals",
+        "question2": "Constructors",
+        "question3": "Object.create",
+        "question4": "Object Construct",
+        "answer": "Object literals"
+    },
+    {
+        "id": 8,
+        "questions": "What is the full form of JSON?",
+        "question1": "JavaScripts Object Notification",
+        "question2": "JavaScript Object Notation",
+        "question3": "None of these",
+        "answer": "None of these"
+    },
+    {
+        "id": 9,
+        "questions": "JSON is a programming language?",
+        "question1": "True",
+        "question2": "False",
+        "answer": "False"
+    },
+    {
+        "id": 10,
+        "questions": "What is JSON data?",
+        "question1": "Exchanging data",
+        "question2": "Non-exchanging data",
+        "question3": "Changing data",
+        "question4": "None of these",
+        "answer": "None of these"
+    }
+]
