@@ -48,6 +48,9 @@ function AssessmentForm() {
     const respuestasCorrectas = result.filter((r) => r == true)
     const numeroRespuestasCorrectas = respuestasCorrectas.length
 
+    console.log(numeroRespuestasCorrectas);
+    console.log(respuestasCorrectas);
+
     return (
         <div className="container">
             <form action="#" className="formulario">
