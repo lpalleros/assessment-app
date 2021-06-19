@@ -8,3 +8,13 @@ body {
     min-height: 50px;
     background-color: #555B6E;
 }
+
+.logo {
+    width: 24px;
+    /* height: 30px; */
+    color: white;
+    padding-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* cursor: pointer; */
+}
