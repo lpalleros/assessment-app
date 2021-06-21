@@ -56,19 +56,45 @@ function AssessmentForm() {
             <form action="#" className="formulario">
                 <p className="texto-formulario">{questions[numeroPregunta].questions}</p>
                 <label htmlFor='op1' className="opciones">
-                    <input id="op1" name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question1)} />
+                    <input 
+                        id="op1" 
+                        name="group1" 
+                        type="radio" 
+                        onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question1)} 
+                        checked={preguntaSeleccionada === questions[numeroPregunta].question1}
+                    />
                     <span>{questions[numeroPregunta].question1}</span>
                 </label> 
                 <label htmlFor='op2' className="opciones">
-                    <input id='op2'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question2)} />
+                    <input 
+                        id='op2'
+                        name="group1" 
+                        type="radio" 
+                        onClick={() => { 
+                            setPreguntaSeleccionada(questions[numeroPregunta].question2)
+                        }} 
+                        checked={preguntaSeleccionada === questions[numeroPregunta].question2 }
+                    />
                     <span>{questions[numeroPregunta].question2}</span>
                 </label>
                 <label htmlFor='op3' className="opciones">
-                    <input id='op3'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question3)} />
+                    <input 
+                        id='op3'
+                        name="group1" 
+                        type="radio" 
+                        onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question3)} 
+                        checked={preguntaSeleccionada === questions[numeroPregunta].question3}
+                    />
                     <span>{questions[numeroPregunta].question3}</span>
                 </label>
                 <label htmlFor='op4' className="opciones">
-                    <input id='op4'name="group1" type="radio" onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question4)} />
+                    <input 
+                        id='op4'
+                        name="group1" 
+                        type="radio" 
+                        onClick={() => setPreguntaSeleccionada(questions[numeroPregunta].question4)} 
+                        checked={preguntaSeleccionada === questions[numeroPregunta].question4}
+                    />
                     <span>{questions[numeroPregunta].question4}</span>
                 </label>
             </form>
